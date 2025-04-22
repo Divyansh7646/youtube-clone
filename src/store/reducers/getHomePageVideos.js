@@ -3,7 +3,7 @@ import axios from "axios";
 import { parseData } from "../../utils/parseData";
 
 const API_KEY = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
-const corsProxy = (url) => `http://localhost:8080/proxy/${encodeURIComponent(url)}`;
+const corsProxy = (url) => `https://cors-proxy-dgw5.onrender.com/proxy/${encodeURIComponent(url)}`;
 
 export const getHomePageVideos = createAsyncThunk(
   "youtube/App/homePageVideos",
